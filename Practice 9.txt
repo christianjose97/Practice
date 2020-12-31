@@ -1,0 +1,61 @@
+class Solution {
+    public int[] plusOne(int[] digits) {
+        
+        for(int i = digits.length -1; i >=0; i--)
+        {
+            if(digits[i] < 9)
+            {
+                digits[i]++;
+                return digits;
+            }
+            
+            digits[i] = 0;
+        }
+        
+        int[] result = new int[digits.length + 1];
+        result[0] = 1;
+        return result;
+        
+
+
+
+
+
+        /*List<Integer> list = new ArrayList<Integer>();
+        
+        if(digits == null || digits.length == 0)
+        {
+            return null;
+        }
+        
+        if(digits[0] == 0)
+        {
+            digits[0] = 1;
+            return digits;
+        }
+        
+        for(int i = 0; i < digits.length; i++)
+        {
+            if( i == digits.length-1)
+            {
+                if(digit[i] < 9)
+                {
+                digits[i]+= 1;
+                }
+                else
+                {
+                    list.set(i,0);
+                }
+                list.add(digits[i]);
+            }
+        }
+        
+        int[] result = new int[list.size()];
+        
+        for(int i = 0; i < list.size(); i++)
+        {
+            
+        
+        return digits;*/
+    }
+}
